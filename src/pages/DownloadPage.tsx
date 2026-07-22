@@ -61,18 +61,17 @@ const DownloadPage = () => {
         <FadeIn delay={0.2}>
           <div className="grid sm:grid-cols-3 gap-6 max-w-3xl mx-auto mb-16">
             {downloads.map((item, index) => (
-              <a
+              <button
                 key={index}
-                href="#"
                 className="group bg-surface rounded-2xl p-8 border border-white/5 hover:border-gold/30 transition-all flex flex-col items-center gap-4"
               >
                 <item.icon className="w-12 h-12 text-gold group-hover:scale-110 transition-transform" />
                 <div>
                   <p className="font-display text-lg text-text-main">{item.name}</p>
                   <p className="text-text-muted text-sm">{item.desc}</p>
-                </div>
-              </a>
-            ))}
+                 </div>
+               </button>
+             ))}
           </div>
         </FadeIn>
 

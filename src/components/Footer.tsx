@@ -1,5 +1,14 @@
 import { Link } from 'react-router-dom'
-import { Wallet, AtSign, Camera, Play, Users } from 'lucide-react'
+import { AtSign, Camera, Play, Users } from 'lucide-react'
+import { SOCIAL_LINKS } from '../data/mockData'
+
+const iconMap: Record<string, React.ElementType> = {
+  MessageCircle: AtSign,
+  Facebook: Users,
+  Instagram: Camera,
+  Music: AtSign,
+  Youtube: Play,
+}
 
 const FOOTER_LINKS = {
   game: [
@@ -21,12 +30,9 @@ const FOOTER_LINKS = {
   ],
 }
 
-import Newsletter from './Newsletter'
-
 const Footer = () => {
   return (
     <footer className="relative border-t border-white/10 bg-deep/80 backdrop-blur-xl">
-      <Newsletter />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div className="lg:col-span-2">
@@ -43,10 +49,14 @@ const Footer = () => {
               Masuki era baru petualangan MMORPG Indonesia. The Legend Never Ends. Powered by Eternal × GarudaPay.
             </p>
             <div className="flex items-center gap-4 mt-6">
-               <a href="#" className="p-2.5 rounded-lg glass hover:text-gold transition-colors" aria-label="Twitter"><AtSign size={18} /></a>
-               <a href="#" className="p-2.5 rounded-lg glass hover:text-gold transition-colors" aria-label="Instagram"><Camera size={18} /></a>
-               <a href="#" className="p-2.5 rounded-lg glass hover:text-gold transition-colors" aria-label="YouTube"><Play size={18} /></a>
-               <a href="#" className="p-2.5 rounded-lg glass hover:text-gold transition-colors" aria-label="Facebook"><Users size={18} /></a>
+              {SOCIAL_LINKS.map((link) => {
+                const Icon = iconMap[link.icon] || AtSign
+                return (
+                  <a key={link.name} href={link.href} target="_blank" rel="noopener noreferrer" className="p-2.5 rounded-lg glass hover:text-gold transition-colors" aria-label={link.name}>
+                    <Icon size={18} />
+                  </a>
+                )
+              })}
             </div>
           </div>
 
