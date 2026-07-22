@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { Users, Compass, Lightbulb, Shield } from 'lucide-react'
 import { motion, useInView } from 'framer-motion'
 import { useRef, useEffect } from 'react'
+import BreadcrumbJsonLd from '../components/BreadcrumbJsonLd'
 
 const FadeIn = ({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) => {
   const ref = useRef(null)
@@ -34,6 +35,12 @@ const AboutPage = () => {
 
   return (
     <div className="container mx-auto px-4 max-w-4xl pt-12 text-center">
+      <BreadcrumbJsonLd />
+      <nav className="flex items-center gap-2 text-sm text-text-muted mb-6">
+        <Link to="/" className="hover:text-gold transition-colors">Home</Link>
+        <span>/</span>
+        <span className="text-text-main">About</span>
+      </nav>
       <FadeIn>
         <h1 className="font-display text-4xl md:text-5xl text-text-main mb-6">ABOUT</h1>
       </FadeIn>

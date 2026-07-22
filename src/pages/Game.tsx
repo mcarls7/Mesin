@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { Link } from 'react-router-dom'
+import BreadcrumbJsonLd from '../components/BreadcrumbJsonLd'
 import { Sword, Shield, Users, Trophy, Sparkles, ChevronRight, Download, UserPlus, Gem, Zap, Lock, Clock } from 'lucide-react'
 
 const FadeIn = ({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) => {
@@ -55,6 +56,12 @@ const Game = () => {
   return (
     <div className="pt-24 pb-12">
       <div className="container mx-auto px-4">
+        <BreadcrumbJsonLd />
+        <nav className="flex items-center gap-2 text-sm text-text-muted mb-6">
+          <Link to="/" className="hover:text-gold transition-colors">Home</Link>
+          <span>/</span>
+          <span className="text-text-main">Game</span>
+        </nav>
         <FadeIn>
           <div className="bg-deep/50 rounded-3xl p-8 md:p-12 text-center mb-12">
             <p className="text-gold uppercase tracking-[0.3em] text-sm mb-3">Game</p>

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { motion, useInView } from 'framer-motion'
 import { useRef, useEffect } from 'react'
+import BreadcrumbJsonLd from '../components/BreadcrumbJsonLd'
 
 const FadeIn = ({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) => {
   const ref = useRef(null)
@@ -26,8 +27,14 @@ const NotFound = () => {
 
   return (
     <div className="container mx-auto px-4 text-center pt-24">
+      <BreadcrumbJsonLd />
+      <nav className="flex items-center gap-2 text-sm text-text-muted mb-6">
+        <Link to="/" className="hover:text-gold transition-colors">Home</Link>
+        <span>/</span>
+        <span className="text-text-main">Page Not Found</span>
+      </nav>
       <FadeIn>
-        <div className="text-gold opacity-20 font-display text-9xl select-none">404</div>
+        <div className="text-gold opacity-20 font-display text-9xl select-none">✦</div>
       </FadeIn>
       <FadeIn delay={0.15}>
         <h1 className="font-display text-4xl md:text-5xl text-text-main mb-4">PAGE NOT FOUND</h1>

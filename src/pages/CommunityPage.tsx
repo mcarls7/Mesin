@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { MessageCircle, Users, Camera, Music, Play } from 'lucide-react'
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
+import BreadcrumbJsonLd from '../components/BreadcrumbJsonLd'
 import { SOCIAL_LINKS } from '../data/mockData'
 
 const FadeIn = ({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) => {
@@ -37,6 +38,12 @@ const CommunityPage = () => {
 
   return (
     <div className="container mx-auto px-4 text-center pt-12">
+      <BreadcrumbJsonLd />
+      <nav className="flex items-center gap-2 text-sm text-text-muted mb-6">
+        <Link to="/" className="hover:text-gold transition-colors">Home</Link>
+        <span>/</span>
+        <span className="text-text-main">Community</span>
+      </nav>
       <FadeIn>
         <h1 className="font-display text-4xl md:text-6xl text-text-main mb-4">
           JOIN THE COMMUNITY

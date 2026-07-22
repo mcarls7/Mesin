@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { Link } from 'react-router-dom'
+import BreadcrumbJsonLd from '../components/BreadcrumbJsonLd'
 import { Zap, Shield, CheckCircle, HelpCircle } from 'lucide-react'
 
 const FadeIn = ({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) => {
@@ -43,6 +44,12 @@ const TopUpPage = () => {
   return (
     <div className="pt-24 pb-12">
       <div className="container mx-auto px-4 max-w-4xl text-center">
+        <BreadcrumbJsonLd />
+        <nav className="flex items-center gap-2 text-sm text-text-muted mb-6">
+          <Link to="/" className="hover:text-gold transition-colors">Home</Link>
+          <span>/</span>
+          <span className="text-text-main">Top Up</span>
+        </nav>
         <FadeIn>
           <h1 className="font-display text-4xl md:text-6xl text-text-main mb-4">
             TOP UP VIA GARUDAPAY

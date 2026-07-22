@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { motion, useInView } from 'framer-motion'
+import BreadcrumbJsonLd from '../components/BreadcrumbJsonLd'
 import { Users, CalendarDays, CreditCard, Globe } from 'lucide-react'
 
 const FadeIn = ({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) => {
@@ -28,9 +29,11 @@ const SealOnlineIndonesiaPage = () => {
   return (
     <div className="pt-24 pb-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Breadcrumbs */}
+        <BreadcrumbJsonLd />
         <nav className="flex items-center gap-2 text-sm text-text-muted mb-6">
           <Link to="/" className="hover:text-gold transition-colors">Home</Link>
+          <span>/</span>
+          <Link to="/seal-online" className="hover:text-gold transition-colors">SEAL Online</Link>
           <span>/</span>
           <span className="text-text-main">SEAL Online Indonesia</span>
         </nav>

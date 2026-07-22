@@ -1,6 +1,7 @@
 import { useRef, useEffect } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { Link } from 'react-router-dom'
+import BreadcrumbJsonLd from '../components/BreadcrumbJsonLd'
 import { NEWS } from '../data/mockData'
 
 const FadeIn = ({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) => {
@@ -23,6 +24,12 @@ const NewsPage = () => {
   return (
     <div className="pt-24 pb-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <BreadcrumbJsonLd />
+        <nav className="flex items-center gap-2 text-sm text-text-muted mb-6">
+          <Link to="/" className="hover:text-gold transition-colors">Home</Link>
+          <span>/</span>
+          <span className="text-text-main">News</span>
+        </nav>
         <FadeIn>
           <h1 className="font-display text-4xl md:text-5xl text-text-main mb-2">NEWS</h1>
           <p className="text-text-muted text-lg mb-8">Latest updates from SEAL Online Eternal</p>

@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
+import { Link } from 'react-router-dom'
 import Hero from '../components/Hero'
 import AboutSection from '../components/AboutSection'
 import FeaturesSection from '../components/FeaturesSection'
@@ -12,22 +13,7 @@ import GarudaPayRebornSection from '../components/GarudaPayRebornSection'
 import CommunitySection from '../components/CommunitySection'
 import CreatorSection from '../components/CreatorSection'
 import DownloadCta from '../components/DownloadCta'
-
-const FadeIn = ({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) => {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: '-100px' })
-
-  return (
-    <motion.div
-      ref={ref}
-      initial={{ opacity: 0, y: 30 }}
-      animate={isInView ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 0.7, delay }}
-    >
-      {children}
-    </motion.div>
-  )
-}
+import BreadcrumbJsonLd from '../components/BreadcrumbJsonLd'
 
 const Home = () => {
   useEffect(() => {
@@ -38,6 +24,10 @@ const Home = () => {
 
   return (
     <main>
+      <BreadcrumbJsonLd />
+      <nav className="flex items-center gap-2 text-sm text-text-muted mb-6">
+        <Link to="/" className="hover:text-gold transition-colors">Home</Link>
+      </nav>
       <Hero />
       <FadeIn><AboutSection /></FadeIn>
       <FadeIn delay={0.1}><FeaturesSection /></FadeIn>
