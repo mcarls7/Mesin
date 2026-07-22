@@ -1,6 +1,9 @@
 import { Outlet } from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import ScrollProgress from '../components/ScrollProgress'
+import CookieConsent from '../components/CookieConsent'
+import ServerStatus from '../components/ServerStatus'
 
 const MainLayout = () => {
   return (
@@ -10,6 +13,9 @@ const MainLayout = () => {
         <Outlet />
       </main>
       <Footer />
+      <ScrollProgress />
+      <ServerStatus />
+      <CookieConsent />
     </div>
   )
 }

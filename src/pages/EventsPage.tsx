@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import BreadcrumbJsonLd from '../components/BreadcrumbJsonLd'
 import { EVENTS } from '../data/mockData'
 import { Calendar } from 'lucide-react'
+import ShareButtons from '../components/ShareButtons'
 
 const FadeIn = ({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) => {
   const ref = useRef(null)
@@ -22,10 +23,26 @@ const EventsPage = () => {
     if (desc) desc.setAttribute('content', 'Event eksklusif SEAL Online Eternal. Turnamen guild, double XP, dan hadiah menarik.')
   }, [])
 
+  const eventSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    itemListElement: EVENTS.map((event, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      url: `https://sealonline.co.id/events#event-${event.id}`,
+      name: event.title,
+      date: event.date,
+    })),
+  }
+
   return (
     <div className="pt-24 pb-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <BreadcrumbJsonLd />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(eventSchema) }}
+        />
         <nav className="flex items-center gap-2 text-sm text-text-muted mb-6">
           <Link to="/" className="hover:text-gold transition-colors">Home</Link>
           <span>/</span>
@@ -52,6 +69,9 @@ const EventsPage = () => {
                     <p className="text-text-muted text-sm">
                       Join this exclusive event and earn rare rewards, unique items, and special titles. Compete with players from across the realm and showcase your skills in this thrilling competition.
                     </p>
+                    <div className="mt-3">
+                      <ShareButtons title={event.title} url={`https://sealonline.co.id/events#event-${event.id}`} />
+                    </div>
                   </div>
                   <div className="min-w-fit">
                     <Link to={`/events/${event.id}`} className="inline-block px-6 py-2.5 rounded-lg bg-gradient-to-r from-gold to-ember text-midnight font-bold text-sm hover:shadow-lg hover:shadow-gold/20 transition-all">

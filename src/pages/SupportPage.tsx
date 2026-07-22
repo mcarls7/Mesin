@@ -50,6 +50,19 @@ const SupportPage = () => {
     if (desc) desc.setAttribute('content', 'Bantuan dan dukungan untuk pemain SEAL Online Eternal. FAQ, kontak, dan troubleshooting.')
   }, [])
 
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((faq) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer,
+      },
+    })),
+  }
+
   const [openIndex, setOpenIndex] = useState<number | null>(null)
   const [searchQuery, setSearchQuery] = useState('')
 
@@ -66,6 +79,10 @@ const SupportPage = () => {
   return (
     <div className="container mx-auto px-4 max-w-4xl pt-12">
       <BreadcrumbJsonLd />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <nav className="flex items-center gap-2 text-sm text-text-muted mb-6">
         <Link to="/" className="hover:text-gold transition-colors">Home</Link>
         <span>/</span>

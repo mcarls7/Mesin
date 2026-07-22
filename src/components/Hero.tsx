@@ -1,5 +1,6 @@
 import Particles from '../components/Particles'
 import { Link } from 'react-router-dom'
+import { Play } from 'lucide-react'
 
 const Hero = () => {
   return (
@@ -17,7 +18,7 @@ const Hero = () => {
         <p className="text-text-muted text-lg md:text-xl max-w-2xl mx-auto mb-8">
           Enter a new era of adventure. Masuki dunia MMORPG Indonesia yang lebih epic dari sebelumnya.
         </p>
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
           <Link to="/" className="px-8 py-3 bg-gradient-to-r from-gold to-ember text-midnight font-bold rounded-lg hover:opacity-90 transition-opacity">
             PLAY NOW
           </Link>
@@ -31,6 +32,12 @@ const Hero = () => {
             TOP UP
           </Link>
         </div>
+        <button className="inline-flex items-center gap-2 px-6 py-3 rounded-full glass hover:border-gold/30 transition-all mb-8 group">
+          <span className="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center group-hover:bg-gold/30 transition-colors">
+            <Play size={18} className="text-gold fill-gold" />
+          </span>
+          <span className="text-text-main font-medium">Watch Trailer</span>
+        </button>
         <p className="text-text-muted text-sm">Powered by Eternal × GarudaPay</p>
       </div>
     </section>

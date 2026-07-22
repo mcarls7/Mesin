@@ -1,6 +1,7 @@
 import { NEWS } from '../data/mockData'
 import { Link } from 'react-router-dom'
 import { ArrowRight } from 'lucide-react'
+import ShareButtons from './ShareButtons'
 
 const NewsSection = () => {
   const newsItems = NEWS.slice(0, 3)
@@ -24,6 +25,9 @@ const NewsSection = () => {
                   <h3 className="text-gold font-display text-lg">{item.title}</h3>
                   <p className="text-text-muted text-xs mt-1">{item.date}</p>
                   <p className="text-text-muted text-sm leading-relaxed mt-3">{item.description}</p>
+                  <div className="mt-4">
+                    <ShareButtons title={item.title} url={`https://sealonline.co.id/news#news-${item.id}`} />
+                  </div>
                 </div>
               </article>
             ))}

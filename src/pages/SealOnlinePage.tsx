@@ -31,10 +31,25 @@ const SealOnlinePage = () => {
     if (desc) desc.setAttribute('content', 'SEAL Online adalah MMORPG legendaris Indonesia. Jelajahi dunia petualangan bersama jutaan pemain.')
   }, [])
 
+  const gameSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'VideoGame',
+    name: 'SEAL Online',
+    description: 'MMORPG legendaris Indonesia dengan dunia yang luas, sistem pertarungan yang memuaskan, dan komunitas yang hangat.',
+    genre: 'MMORPG',
+    gamePlatform: 'PC',
+    applicationCategory: 'Game',
+    operatingSystem: 'Windows',
+  }
+
   return (
     <div className="pt-24 pb-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <BreadcrumbJsonLd />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(gameSchema) }}
+        />
         <nav className="flex items-center gap-2 text-sm text-text-muted mb-6">
           <Link to="/" className="hover:text-gold transition-colors">Home</Link>
           <span>/</span>
