@@ -45,9 +45,9 @@ const accentClasses = ['text-gold', 'text-gray-400', 'text-amber-700']
 
 const RankingPage = () => {
   useEffect(() => {
-    document.title = 'Ranking | SEAL Online Eternal GarudaPay'
+    document.title = 'Ranking SEAL Online - Top Player & Guild Indonesia'
     const desc = document.querySelector('meta[name="description"]')
-    if (desc) desc.setAttribute('content', 'Ranking pemain dan guild SEAL Online Eternal. Lihat siapa yang terbaik.')
+    if (desc) desc.setAttribute('content', 'Lihat ranking pemain dan guild SEAL Online Eternal. Siapa yang terkuat di server Indonesia? Update mingguan.')
   }, [])
 
   const [activeTab, setActiveTab] = useState<TabId>('players')

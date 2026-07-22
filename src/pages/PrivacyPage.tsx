@@ -29,9 +29,9 @@ const sections = [
 
 const PrivacyPage = () => {
   useEffect(() => {
-    document.title = 'Privacy Policy | SEAL Online Eternal GarudaPay'
+    document.title = 'Privacy Policy - SEAL Online Eternal GarudaPay'
     const desc = document.querySelector('meta[name="description"]')
-    if (desc) desc.setAttribute('content', 'Kebijakan privasi SEAL Online Eternal GarudaPay. Data keamanan dan hak pengguna.')
+    if (desc) desc.setAttribute('content', 'Kebijakan privasi SEAL Online Eternal GarudaPay. Perlindungan data dan keamanan pemain Indonesia.')
   }, [])
 
   return (

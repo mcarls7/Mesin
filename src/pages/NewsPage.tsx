@@ -17,9 +17,9 @@ const FadeIn = ({ children, delay = 0 }: { children: React.ReactNode; delay?: nu
 
 const NewsPage = () => {
   useEffect(() => {
-    document.title = 'News | SEAL Online Eternal GarudaPay'
+    document.title = 'Berita SEAL Online Terbaru - Update & Event Indonesia'
     const desc = document.querySelector('meta[name="description"]')
-    if (desc) desc.setAttribute('content', 'Berita terbaru SEAL Online Eternal. Update, event, dan pengumuman resmi untuk komunitas.')
+    if (desc) desc.setAttribute('content', 'Update terbaru SEAL Online Eternal, event GarudaPay, dan pengumuman resmi untuk komunitas SEAL Indonesia.')
   }, [])
 
   const articleSchema = {

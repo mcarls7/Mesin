@@ -21,9 +21,9 @@ const FadeIn = ({ children, delay = 0 }: { children: React.ReactNode; delay?: nu
 
 const SealOnlineIdPage = () => {
   useEffect(() => {
-    document.title = 'SEAL Online ID | Hub Komunitas Indonesia'
+    document.title = 'SEAL Online ID - Hub Komunitas & Info Terbaru'
     const desc = document.querySelector('meta[name="description"]')
-    if (desc) desc.setAttribute('content', 'SEAL Online ID adalah pusat informasi dan komunitas untuk pemain SEAL Online di Indonesia.')
+    if (desc) desc.setAttribute('content', 'SEAL Online ID adalah pusat informasi komunitas Indonesia. Berita, guide, event, dan top up GarudaPay untuk SEAL Online.')
   }, [])
 
   return (

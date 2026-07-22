@@ -21,9 +21,9 @@ const FadeIn = ({ children, delay = 0 }: { children: React.ReactNode; delay?: nu
 
 const ContactPage = () => {
   useEffect(() => {
-    document.title = 'Contact | SEAL Online Eternal GarudaPay'
+    document.title = 'Contact SEAL Online - Hubungi Tim GarudaPay'
     const desc = document.querySelector('meta[name="description"]')
-    if (desc) desc.setAttribute('content', 'Hubungi tim SEAL Online Eternal GarudaPay. Ada pertanyaan? Reach out to us.')
+    if (desc) desc.setAttribute('content', 'Hubungi tim SEAL Online Eternal GarudaPay. Ada pertanyaan? Kirim pesan dan kami akan bantu komunitas Indonesia.')
   }, [])
 
   return (

@@ -22,7 +22,7 @@ const NotFound = () => {
   useEffect(() => {
     document.title = '404 - Page Not Found | SEAL Online Eternal GarudaPay'
     const desc = document.querySelector('meta[name="description"]')
-    if (desc) desc.setAttribute('content', 'Halaman yang Anda cari tidak ditemukan. Kembali ke halaman utama.')
+    if (desc) desc.setAttribute('content', 'Halaman tidak ditemukan. Kembali ke SEAL Online Eternal GarudaPay untuk info game MMORPG Indonesia terbaru.')
   }, [])
 
   return (

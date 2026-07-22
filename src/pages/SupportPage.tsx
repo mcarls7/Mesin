@@ -45,9 +45,9 @@ const faqs = [
 
 const SupportPage = () => {
   useEffect(() => {
-    document.title = 'Support | SEAL Online Eternal GarudaPay'
+    document.title = 'Support SEAL Online - Bantuan & FAQ Pemain Indonesia'
     const desc = document.querySelector('meta[name="description"]')
-    if (desc) desc.setAttribute('content', 'Bantuan dan dukungan untuk pemain SEAL Online Eternal. FAQ, kontak, dan troubleshooting.')
+    if (desc) desc.setAttribute('content', 'Dukungan pemain SEAL Online Eternal. FAQ, kontak support, dan troubleshooting untuk komunitas Indonesia.')
   }, [])
 
   const faqSchema = {

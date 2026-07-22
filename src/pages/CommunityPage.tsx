@@ -31,9 +31,9 @@ const iconMap: Record<string, React.ReactNode> = {
 
 const CommunityPage = () => {
   useEffect(() => {
-    document.title = 'Community | SEAL Online Eternal GarudaPay'
+    document.title = 'Komunitas SEAL Online Indonesia - Discord, FB, IG, TikTok'
     const desc = document.querySelector('meta[name="description"]')
-    if (desc) desc.setAttribute('content', 'Bergabung dengan komunitas SEAL Online Eternal. Discord, Facebook, Instagram, TikTok, YouTube.')
+    if (desc) desc.setAttribute('content', 'Bergabung dengan komunitas SEAL Online Eternal. Discord, Facebook, Instagram, TikTok, YouTube - semua di sini.')
   }, [])
 
   return (

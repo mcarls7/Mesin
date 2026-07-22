@@ -26,9 +26,9 @@ const iconMap: Record<string, React.ReactNode> = {
 
 const SealOnlinePage = () => {
   useEffect(() => {
-    document.title = 'Apa Itu SEAL Online? | SEAL Online Indonesia'
+    document.title = 'SEAL Online Indonesia - Game MMORPG Legendaris GarudaPay'
     const desc = document.querySelector('meta[name="description"]')
-    if (desc) desc.setAttribute('content', 'SEAL Online adalah MMORPG legendaris Indonesia. Jelajahi dunia petualangan bersama jutaan pemain.')
+    if (desc) desc.setAttribute('content', 'SEAL Online adalah MMORPG legendaris Indonesia. Game terbaru GarudaPay dengan dunia luas, pertarungan seru, dan komunitas hangat.')
   }, [])
 
   const gameSchema = {

@@ -21,9 +21,9 @@ const FadeIn = ({ children, delay = 0 }: { children: React.ReactNode; delay?: nu
 
 const GarudaPayPage = () => {
   useEffect(() => {
-    document.title = 'GarudaPay | Gaming Payment Ecosystem'
+    document.title = 'GarudaPay - Gaming Payment Ecosystem untuk SEAL Online'
     const desc = document.querySelector('meta[name="description"]')
-    if (desc) desc.setAttribute('content', 'GarudaPay adalah ekosistem pembayaran gaming. Top up, voucher, promo, reward, dan membership dalam satu tempat.')
+    if (desc) desc.setAttribute('content', 'GarudaPay adalah ekosistem pembayaran gaming resmi untuk SEAL Online. Top up, voucher, promo, reward, dan membership.')
   }, [])
 
   return (

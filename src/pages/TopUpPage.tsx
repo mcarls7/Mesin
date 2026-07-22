@@ -21,9 +21,9 @@ const FadeIn = ({ children, delay = 0 }: { children: React.ReactNode; delay?: nu
 
 const TopUpPage = () => {
   useEffect(() => {
-    document.title = 'Top Up GarudaPay | SEAL Online Eternal'
+    document.title = 'Top Up SEAL Online - GarudaPay Gaming Payment'
     const desc = document.querySelector('meta[name="description"]')
-    if (desc) desc.setAttribute('content', 'Top up saldo game dengan cepat dan aman melalui GarudaPay. Fast. Secure. Simple.')
+    if (desc) desc.setAttribute('content', 'Top up diamond dan item SEAL Online dengan GarudaPay. Fast, secure, simple. Metode pembayaran gaming resmi untuk SEAL Indonesia.')
   }, [])
 
   const packages = [

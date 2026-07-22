@@ -21,9 +21,9 @@ const FadeIn = ({ children, delay = 0 }: { children: React.ReactNode; delay?: nu
 
 const GarudaPayRebornPage = () => {
   useEffect(() => {
-    document.title = 'GarudaPay Reborn | A New Era of Gaming'
+    document.title = 'GarudaPay Reborn - Era Baru Gaming Payment Indonesia'
     const desc = document.querySelector('meta[name="description"]')
-    if (desc) desc.setAttribute('content', 'GarudaPay Reborn menghadirkan era baru ekosistem gaming. Lebih cepat, lebih aman, lebih menyenangkan.')
+    if (desc) desc.setAttribute('content', 'GarudaPay Reborn menghadirkan era baru ekosistem gaming Indonesia. Lebih cepat, aman, dan terintegrasi dengan SEAL Online.')
   }, [])
 
   return (

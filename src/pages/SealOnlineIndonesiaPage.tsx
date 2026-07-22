@@ -21,9 +21,9 @@ const FadeIn = ({ children, delay = 0 }: { children: React.ReactNode; delay?: nu
 
 const SealOnlineIndonesiaPage = () => {
   useEffect(() => {
-    document.title = 'SEAL Online Indonesia | Komunitas & Server Lokal'
+    document.title = 'SEAL Online Indonesia - Komunitas, Server & Event Lokal'
     const desc = document.querySelector('meta[name="description"]')
-    if (desc) desc.setAttribute('content', 'Komunitas SEAL Online Indonesia. Server lokal, event khusus, dan pembayaran terintegrasi.')
+    if (desc) desc.setAttribute('content', 'Komunitas SEAL Online Indonesia dengan server lokal, event khusus, dan GarudaPay untuk top up game terpercaya.')
   }, [])
 
   return (

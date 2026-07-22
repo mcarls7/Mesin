@@ -79,9 +79,9 @@ const rarityColors: Record<string, string> = {
 
 const DatabasePage = () => {
   useEffect(() => {
-    document.title = 'Database | SEAL Online Eternal GarudaPay'
+    document.title = 'Database SEAL Online - Item, Monster, Map, Quest'
     const desc = document.querySelector('meta[name="description"]')
-    if (desc) desc.setAttribute('content', 'Database SEAL Online Eternal - item, monster, map, quest, equipment, dan skill.')
+    if (desc) desc.setAttribute('content', 'Database lengkap SEAL Online Eternal. Temukan info item, monster, map, quest, equipment, dan skill MMORPG Indonesia.')
   }, [])
 
   const [activeTab, setActiveTab] = useState<TabId>('items')

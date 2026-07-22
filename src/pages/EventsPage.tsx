@@ -18,9 +18,9 @@ const FadeIn = ({ children, delay = 0 }: { children: React.ReactNode; delay?: nu
 
 const EventsPage = () => {
   useEffect(() => {
-    document.title = 'Events | SEAL Online Eternal GarudaPay'
+    document.title = 'Event SEAL Online - Tournament & Promo GarudaPay'
     const desc = document.querySelector('meta[name="description"]')
-    if (desc) desc.setAttribute('content', 'Event eksklusif SEAL Online Eternal. Turnamen guild, double XP, dan hadiah menarik.')
+    if (desc) desc.setAttribute('content', 'Event eksklusif SEAL Online dan GarudaPay. Turnamen guild, double XP, dan hadiah menarik untuk pemain Indonesia.')
   }, [])
 
   const eventSchema = {

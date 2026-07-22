@@ -21,9 +21,9 @@ const FadeIn = ({ children, delay = 0 }: { children: React.ReactNode; delay?: nu
 
 const RegisterPage = () => {
   useEffect(() => {
-    document.title = 'Register | SEAL Online Eternal GarudaPay'
+    document.title = 'Daftar Akun SEAL Online Indonesia - Create Account'
     const desc = document.querySelector('meta[name="description"]')
-    if (desc) desc.setAttribute('content', 'Daftar akun SEAL Online Eternal gratis. Bergabung dengan jutaan pemain Indonesia.')
+    if (desc) desc.setAttribute('content', 'Buat akun SEAL Online Eternal gratis. Daftar dan mainkan MMORPG terbaru Indonesia dari GarudaPay sekarang.')
   }, [])
 
   const [formData, setFormData] = useState({
