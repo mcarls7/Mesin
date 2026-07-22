@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /private/
+
+Sitemap: https://sealonline.co.id/sitemap.xml

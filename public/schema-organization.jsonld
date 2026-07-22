@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "SEAL Online Eternal GarudaPay",
+  "url": "https://sealonline.co.id",
+  "logo": "https://sealonline.co.id/logo.png",
+  "description": "The Legend Never Ends. Powered by Eternal × GarudaPay.",
+  "sameAs": [
+    "https://facebook.com/sealonlineofficial",
+    "https://instagram.com/sealonlineeternal",
+    "https://youtube.com/@sealonlineeternal",
+    "https://tiktok.com/@sealonlineeternal"
+  ]
+}
