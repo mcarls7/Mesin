@@ -2,11 +2,14 @@
   "name": "seal-online-eternal-garudapay",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://mcarls7.github.io/Mesin",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
-    "lint": "oxlint"
+    "lint": "oxlint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^19.2.7",
