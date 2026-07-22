@@ -1,0 +1,6 @@
+/dist/ linguist-generated
+node_modules/ linguist-generated
+/sw.js linguist-generated
+/workbox-*.js linguist-generated
+/manifest.webmanifest linguist-generated
+/registerSW.js linguist-generated
