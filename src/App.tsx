@@ -27,8 +27,9 @@ const PrivacyPage = lazy(() => import('./pages/PrivacyPage'))
 const NotFound = lazy(() => import('./pages/NotFound'))
 
 const Loading = () => (
-  <div className="min-h-screen flex items-center justify-center bg-midnight">
-    <div className="text-gold font-display text-2xl animate-pulse">Loading...</div>
+  <div className="min-h-screen flex flex-col items-center justify-center bg-midnight gap-4">
+    <div className="w-16 h-16 rounded-full border-4 border-gold/20 border-t-gold animate-spin" />
+    <div className="text-gold font-display text-2xl tracking-widest animate-pulse">LOADING</div>
   </div>
 )
 
