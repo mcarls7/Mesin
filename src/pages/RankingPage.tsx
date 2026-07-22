@@ -47,7 +47,7 @@ const RankingPage = () => {
   useEffect(() => {
     document.title = 'Ranking SEAL Online - Top Player & Guild Indonesia'
     const desc = document.querySelector('meta[name="description"]')
-    if (desc) desc.setAttribute('content', 'Lihat ranking pemain dan guild SEAL Online Eternal. Siapa yang terkuat di server Indonesia? Update mingguan.')
+    if (desc) desc.setAttribute('content', 'Lihat ranking pemain dan guild SEAL Online Eternal. Siapa yang terkuat di server Indonesia? Update mingguan ranking SEAL Online.')
   }, [])
 
   const [activeTab, setActiveTab] = useState<TabId>('players')

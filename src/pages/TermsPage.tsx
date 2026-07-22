@@ -29,9 +29,9 @@ const sections = [
 
 const TermsPage = () => {
   useEffect(() => {
-    document.title = 'Terms of Service - SEAL Online Eternal GarudaPay'
+    document.title = 'Syarat & Ketentuan - SEAL Online Eternal GarudaPay'
     const desc = document.querySelector('meta[name="description"]')
-    if (desc) desc.setAttribute('content', 'Syarat dan ketentuan penggunaan SEAL Online Eternal GarudaPay. Baca sebelum mendaftar dan bermain.')
+    if (desc) desc.setAttribute('content', 'Syarat dan ketentuan penggunaan SEAL Online Eternal GarudaPay. Baca aturan bermain, top up, dan komunitas sebelum mendaftar.')
   }, [])
 
   return (

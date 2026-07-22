@@ -23,7 +23,7 @@ const GarudaPayRebornPage = () => {
   useEffect(() => {
     document.title = 'GarudaPay Reborn - Era Baru Gaming Payment Indonesia'
     const desc = document.querySelector('meta[name="description"]')
-    if (desc) desc.setAttribute('content', 'GarudaPay Reborn menghadirkan era baru ekosistem gaming Indonesia. Lebih cepat, aman, dan terintegrasi dengan SEAL Online.')
+    if (desc) desc.setAttribute('content', 'GarudaPay Reborn menghadirkan era baru ekosistem gaming Indonesia. Lebih cepat, aman, dan terintegrasi dengan SEAL Online Eternal.')
   }, [])
 
   return (

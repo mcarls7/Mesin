@@ -20,9 +20,9 @@ const FadeIn = ({ children, delay = 0 }: { children: React.ReactNode; delay?: nu
 
 const NotFound = () => {
   useEffect(() => {
-    document.title = '404 - Page Not Found | SEAL Online Eternal GarudaPay'
+    document.title = '404 - Halaman Tidak Ditemukan | SEAL Online Eternal'
     const desc = document.querySelector('meta[name="description"]')
-    if (desc) desc.setAttribute('content', 'Halaman tidak ditemukan. Kembali ke SEAL Online Eternal GarudaPay untuk info game MMORPG Indonesia terbaru.')
+    if (desc) desc.setAttribute('content', 'Halaman tidak ditemukan. Kembali ke SEAL Online Eternal GarudaPay untuk info game MMORPG Indonesia terbaru dan GarudaPay.')
   }, [])
 
   return (

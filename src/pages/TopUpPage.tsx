@@ -23,7 +23,7 @@ const TopUpPage = () => {
   useEffect(() => {
     document.title = 'Top Up SEAL Online - GarudaPay Gaming Payment'
     const desc = document.querySelector('meta[name="description"]')
-    if (desc) desc.setAttribute('content', 'Top up diamond dan item SEAL Online dengan GarudaPay. Fast, secure, simple. Metode pembayaran gaming resmi untuk SEAL Indonesia.')
+    if (desc) desc.setAttribute('content', 'Top up diamond SEAL Online dengan GarudaPay. Metode pembayaran gaming resmi Indonesia. Fast, secure, simple. Top up online 24 jam.')
   }, [])
 
   const packages = [

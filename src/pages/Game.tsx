@@ -21,9 +21,9 @@ const FadeIn = ({ children, delay = 0 }: { children: React.ReactNode; delay?: nu
 
 const Game = () => {
   useEffect(() => {
-    document.title = 'SEAL Online Indonesia - Game MMORPG Terbaru'
+    document.title = 'SEAL Online Indonesia - Game MMORPG Terbaru GarudaPay'
     const desc = document.querySelector('meta[name="description"]')
-    if (desc) desc.setAttribute('content', 'Jelajahi dunia SEAL Online Eternal, MMORPG terbaru dari GarudaPay. Pilih kelas, battle, guild, dan event eksklusif untuk komunitas Indonesia.')
+    if (desc) desc.setAttribute('content', 'Main SEAL Online Eternal, game MMORPG terbaru Indonesia dari GarudaPay. Pilih kelas, eksplorasi dunia, battle boss, dan join guild.')
   }, [])
 
   const [activeTab, setActiveTab] = useState('game')

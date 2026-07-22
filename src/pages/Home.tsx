@@ -32,9 +32,9 @@ const FadeIn = ({ children, delay = 0 }: { children: React.ReactNode; delay?: nu
 
 const Home = () => {
   useEffect(() => {
-    document.title = 'SEAL Online Eternal GarudaPay - The Legend Never Ends'
+    document.title = 'SEAL Online Eternal GarudaPay - Game MMORPG Terbaru Indonesia'
     const desc = document.querySelector('meta[name="description"]')
-    if (desc) desc.setAttribute('content', 'SEAL Online terbaru Indonesia. MMORPG epic powered by GarudaPay. Download, top up, dan bergabung dengan komunitas SEAL Indonesia sekarang.')
+    if (desc) desc.setAttribute('content', 'SEAL Online Eternal GarudaPay adalah game MMORPG terbaru Indonesia. Download, top up, dan bergabung dengan komunitas SEAL Online sekarang. Powered by GarudaPay.')
   }, [])
 
   return (

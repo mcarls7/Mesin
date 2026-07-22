@@ -20,7 +20,7 @@ const EventsPage = () => {
   useEffect(() => {
     document.title = 'Event SEAL Online - Tournament & Promo GarudaPay'
     const desc = document.querySelector('meta[name="description"]')
-    if (desc) desc.setAttribute('content', 'Event eksklusif SEAL Online dan GarudaPay. Turnamen guild, double XP, dan hadiah menarik untuk pemain Indonesia.')
+    if (desc) desc.setAttribute('content', 'Event eksklusif SEAL Online dan GarudaPay. Turnamen guild, double XP, dan hadiah menarik untuk pemain Indonesia. Jangan lewatkan!')
   }, [])
 
   const eventSchema = {

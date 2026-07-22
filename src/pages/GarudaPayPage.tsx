@@ -23,7 +23,7 @@ const GarudaPayPage = () => {
   useEffect(() => {
     document.title = 'GarudaPay - Gaming Payment Ecosystem untuk SEAL Online'
     const desc = document.querySelector('meta[name="description"]')
-    if (desc) desc.setAttribute('content', 'GarudaPay adalah ekosistem pembayaran gaming resmi untuk SEAL Online. Top up, voucher, promo, reward, dan membership.')
+    if (desc) desc.setAttribute('content', 'GarudaPay adalah ekosistem pembayaran gaming resmi untuk SEAL Online. Top up, voucher, promo, reward, dan membership dalam satu tempat.')
   }, [])
 
   return (

@@ -17,9 +17,9 @@ const FadeIn = ({ children, delay = 0 }: { children: React.ReactNode; delay?: nu
 
 const NewsPage = () => {
   useEffect(() => {
-    document.title = 'Berita SEAL Online Terbaru - Update & Event Indonesia'
+    document.title = 'Berita SEAL Online Terbaru - Update & Event GarudaPay'
     const desc = document.querySelector('meta[name="description"]')
-    if (desc) desc.setAttribute('content', 'Update terbaru SEAL Online Eternal, event GarudaPay, dan pengumuman resmi untuk komunitas SEAL Indonesia.')
+    if (desc) desc.setAttribute('content', 'Update terbaru SEAL Online Eternal, event GarudaPay, maintenance server, dan pengumuman resmi komunitas SEAL Online Indonesia.')
   }, [])
 
   const articleSchema = {
@@ -48,7 +48,7 @@ const NewsPage = () => {
           <span className="text-text-main">News</span>
         </nav>
         <FadeIn>
-          <h1 className="font-display text-4xl md:text-5xl text-text-main mb-2">NEWS</h1>
+          <h1 className="text-4xl md:text-5xl font-display font-bold text-gold mb-2">NEWS</h1>
           <p className="text-text-muted text-lg mb-8">Latest updates from SEAL Online Eternal</p>
         </FadeIn>
 

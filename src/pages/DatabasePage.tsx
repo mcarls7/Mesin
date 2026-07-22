@@ -81,7 +81,7 @@ const DatabasePage = () => {
   useEffect(() => {
     document.title = 'Database SEAL Online - Item, Monster, Map, Quest'
     const desc = document.querySelector('meta[name="description"]')
-    if (desc) desc.setAttribute('content', 'Database lengkap SEAL Online Eternal. Temukan info item, monster, map, quest, equipment, dan skill MMORPG Indonesia.')
+    if (desc) desc.setAttribute('content', 'Database lengkap SEAL Online Eternal. Informasi item, monster, map, quest, equipment, class, dan skill MMORPG Indonesia terbaru.')
   }, [])
 
   const [activeTab, setActiveTab] = useState<TabId>('items')

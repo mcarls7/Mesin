@@ -23,7 +23,7 @@ const RegisterPage = () => {
   useEffect(() => {
     document.title = 'Daftar Akun SEAL Online Indonesia - Create Account'
     const desc = document.querySelector('meta[name="description"]')
-    if (desc) desc.setAttribute('content', 'Buat akun SEAL Online Eternal gratis. Daftar dan mainkan MMORPG terbaru Indonesia dari GarudaPay sekarang.')
+    if (desc) desc.setAttribute('content', 'Buat akun SEAL Online Eternal gratis. Daftar dan mainkan MMORPG terbaru Indonesia dari GarudaPay. Bergabung dengan jutaan pemain SEAL.')
   }, [])
 
   const [formData, setFormData] = useState({

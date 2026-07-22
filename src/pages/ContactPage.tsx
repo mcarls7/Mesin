@@ -23,7 +23,7 @@ const ContactPage = () => {
   useEffect(() => {
     document.title = 'Contact SEAL Online - Hubungi Tim GarudaPay'
     const desc = document.querySelector('meta[name="description"]')
-    if (desc) desc.setAttribute('content', 'Hubungi tim SEAL Online Eternal GarudaPay. Ada pertanyaan? Kirim pesan dan kami akan bantu komunitas Indonesia.')
+    if (desc) desc.setAttribute('content', 'Hubungi tim SEAL Online Eternal GarudaPay. Ada pertanyaan tentang game, top up, atau komunitas? Kirim pesan kepada kami.')
   }, [])
 
   return (

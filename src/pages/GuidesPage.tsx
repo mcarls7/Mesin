@@ -27,7 +27,7 @@ const GuidesPage = () => {
   useEffect(() => {
     document.title = 'Guide SEAL Online Indonesia - Tips & Panduan MMORPG'
     const desc = document.querySelector('meta[name="description"]')
-    if (desc) desc.setAttribute('content', 'Panduan lengkap SEAL Online Eternal. Tips leveling, class, equipment, guild, dan PvP untuk pemain Indonesia.')
+    if (desc) desc.setAttribute('content', 'Panduan lengkap SEAL Online Eternal. Tips leveling, class guide, equipment, guild war, PvP, dan strategi untuk pemain Indonesia.')
   }, [])
 
   return (

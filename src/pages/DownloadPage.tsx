@@ -23,7 +23,7 @@ const DownloadPage = () => {
   useEffect(() => {
     document.title = 'Download SEAL Online Eternal - Client Game MMORPG'
     const desc = document.querySelector('meta[name="description"]')
-    if (desc) desc.setAttribute('content', 'Download SEAL Online Eternal gratis untuk PC. Instal client game MMORPG Indonesia terbaru dan mulai petualanganmu sekarang.')
+    if (desc) desc.setAttribute('content', 'Download SEAL Online Eternal gratis untuk PC. Instal client game MMORPG Indonesia terbaru dan mulai petualangan SEAL Online sekarang.')
   }, [])
 
   const requirements = [

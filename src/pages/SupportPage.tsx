@@ -47,7 +47,7 @@ const SupportPage = () => {
   useEffect(() => {
     document.title = 'Support SEAL Online - Bantuan & FAQ Pemain Indonesia'
     const desc = document.querySelector('meta[name="description"]')
-    if (desc) desc.setAttribute('content', 'Dukungan pemain SEAL Online Eternal. FAQ, kontak support, dan troubleshooting untuk komunitas Indonesia.')
+    if (desc) desc.setAttribute('content', 'Dukungan pemain SEAL Online Eternal. FAQ lengkap, kontak support, troubleshooting, dan bantuan teknis untuk komunitas Indonesia.')
   }, [])
 
   const faqSchema = {

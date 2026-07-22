@@ -31,7 +31,7 @@ const colorMap: Record<string, string> = {
 
 const SealOnlineEternalPage = () => {
   useEffect(() => {
-    document.title = 'SEAL Online Eternal - Era Baru MMORPG Indonesia'
+    document.title = 'SEAL Online Eternal - Era Baru MMORPG Indonesia GarudaPay'
     const desc = document.querySelector('meta[name="description"]')
     if (desc) desc.setAttribute('content', 'SEAL Online Eternal menghadirkan era baru MMORPG Indonesia. Fitur baru, kelas baru, dunia baru, dan GarudaPay terintegrasi.')
   }, [])

@@ -28,9 +28,9 @@ const values = [
 
 const AboutPage = () => {
   useEffect(() => {
-    document.title = 'About SEAL Online Eternal GarudaPay - Visi & Misi'
+    document.title = 'Tentang SEAL Online Eternal GarudaPay - Visi & Misi'
     const desc = document.querySelector('meta[name="description"]')
-    if (desc) desc.setAttribute('content', 'Tentang SEAL Online Eternal GarudaPay. Visi, misi, dan cerita kami dalam menghadirkan MMORPG terbaru Indonesia.')
+    if (desc) desc.setAttribute('content', 'Tentang SEAL Online Eternal GarudaPay. Visi, misi, dan cerita kami menghadirkan game MMORPG Indonesia terbaru dengan GarudaPay.')
   }, [])
 
   return (

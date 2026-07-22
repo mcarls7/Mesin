@@ -33,7 +33,7 @@ const CommunityPage = () => {
   useEffect(() => {
     document.title = 'Komunitas SEAL Online Indonesia - Discord, FB, IG, TikTok'
     const desc = document.querySelector('meta[name="description"]')
-    if (desc) desc.setAttribute('content', 'Bergabung dengan komunitas SEAL Online Eternal. Discord, Facebook, Instagram, TikTok, YouTube - semua di sini.')
+    if (desc) desc.setAttribute('content', 'Bergabung dengan komunitas SEAL Online Eternal. Hub Discord, Facebook, Instagram, TikTok, YouTube. Temukan teman seperjuangan SEAL.')
   }, [])
 
   return (
