@@ -5,7 +5,7 @@
   "homepage": "https://mcarls7.github.io/Mesin",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "vite build",
     "preview": "vite preview",
     "lint": "oxlint",
     "predeploy": "npm run build",
@@ -30,6 +30,7 @@
     "typescript": "~6.0.2",
     "vite": "^8.1.1",
     "vite-plugin-pwa": "^0.21.0",
-    "oxlint": "^1.71.0"
+    "oxlint": "^1.71.0",
+    "gh-pages": "^6.3.0"
   }
 }
