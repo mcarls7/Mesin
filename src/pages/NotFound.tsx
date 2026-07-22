@@ -1,0 +1,56 @@
+import { Link } from 'react-router-dom'
+import { motion, useInView } from 'framer-motion'
+import { useRef, useEffect } from 'react'
+import BreadcrumbJsonLd from '../components/BreadcrumbJsonLd'
+
+const FadeIn = ({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) => {
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true, margin: '-100px' })
+  return (
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, y: 30 }}
+      animate={isInView ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.7, delay }}
+    >
+      {children}
+    </motion.div>
+  )
+}
+
+const NotFound = () => {
+  useEffect(() => {
+    document.title = '404 - Halaman Tidak Ditemukan | SEAL Online Eternal'
+    const desc = document.querySelector('meta[name="description"]')
+    if (desc) desc.setAttribute('content', 'Halaman tidak ditemukan. Kembali ke SEAL Online Eternal GarudaPay untuk info game MMORPG Indonesia terbaru dan GarudaPay.')
+  }, [])
+
+  return (
+    <div className="container mx-auto px-4 text-center pt-24">
+      <BreadcrumbJsonLd />
+      <nav className="flex items-center gap-2 text-sm text-text-muted mb-6">
+        <Link to="/" className="hover:text-gold transition-colors">Home</Link>
+        <span>/</span>
+        <span className="text-text-main">Page Not Found</span>
+      </nav>
+      <FadeIn>
+        <div className="text-gold opacity-20 font-display text-9xl select-none">✦</div>
+      </FadeIn>
+      <FadeIn delay={0.15}>
+        <h1 className="font-display text-4xl md:text-5xl text-text-main mb-4">PAGE NOT FOUND</h1>
+      </FadeIn>
+      <FadeIn delay={0.3}>
+        <p className="text-text-muted text-lg mb-8">
+          The page you are looking for doesn't exist or has been moved.
+        </p>
+      </FadeIn>
+      <FadeIn delay={0.45}>
+        <Link to="/" className="inline-block px-8 py-3 bg-gradient-to-r from-gold to-ember text-midnight font-bold rounded-lg hover:shadow-lg hover:shadow-gold/20 transition-all">
+          BACK TO HOME
+        </Link>
+      </FadeIn>
+    </div>
+  )
+}
+
+export default NotFound

@@ -1,0 +1,36 @@
+{
+  "name": "seal-online-eternal-garudapay",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "https://mcarls7.github.io/Mesin",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "oxlint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-router-dom": "^7.1.5",
+    "framer-motion": "^12.4.7",
+    "lucide-react": "^0.468.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.2",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.3",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^4.1.3",
+    "@tailwindcss/vite": "^4.1.3",
+    "typescript": "~6.0.2",
+    "vite": "^8.1.1",
+    "vite-plugin-pwa": "^0.21.0",
+    "oxlint": "^1.71.0",
+    "gh-pages": "^6.3.0"
+  }
+}

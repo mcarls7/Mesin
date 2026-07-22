@@ -1,0 +1,16 @@
+{
+  "name": "SEAL Online Eternal GarudaPay",
+  "short_name": "SEAL Eternal",
+  "description": "The Legend Never Ends. Powered by Eternal × GarudaPay.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#02040a",
+  "theme_color": "#f5c842",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
