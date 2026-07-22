@@ -1,4 +1,4 @@
-import { StrictMode, useState } from 'react'
+import { StrictMode, useState, useEffect } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
 import './index.css'
@@ -6,15 +6,6 @@ import App from './App'
 import ErrorBoundary from './components/ErrorBoundary'
 import Analytics from './components/Analytics'
 import LoadingScreen from './components/LoadingScreen'
-
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <BrowserRouter>
-      <a href="#main-content" className="skip-link">Skip to main content</a>
-      <AppContent />
-    </BrowserRouter>
-  </StrictMode>,
-)
 
 const AppContent = () => {
   const [loading, setLoading] = useState(true)
@@ -33,3 +24,12 @@ const AppContent = () => {
     </ErrorBoundary>
   )
 }
+
+createRoot(document.getElementById('root')!).render(
+  <StrictMode>
+    <BrowserRouter>
+      <a href="#main-content" className="skip-link">Skip to main content</a>
+      <AppContent />
+    </BrowserRouter>
+  </StrictMode>,
+)
