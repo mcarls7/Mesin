@@ -1,35 +1,13 @@
-import { StrictMode, useState, useEffect } from 'react'
+import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { BrowserRouter } from 'react-router-dom'
-import './index.css'
+import { HashRouter } from 'react-router-dom'
 import App from './App'
-import ErrorBoundary from './components/ErrorBoundary'
-import Analytics from './components/Analytics'
-import LoadingScreen from './components/LoadingScreen'
-
-const AppContent = () => {
-  const [loading, setLoading] = useState(true)
-
-  useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 1200)
-    return () => clearTimeout(timer)
-  }, [])
-
-  if (loading) return <LoadingScreen />
-
-  return (
-    <ErrorBoundary>
-      <App />
-      <Analytics />
-    </ErrorBoundary>
-  )
-}
+import './index.css'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter>
-      <a href="#main-content" className="skip-link">Skip to main content</a>
-      <AppContent />
-    </BrowserRouter>
-  </StrictMode>,
+    <HashRouter>
+      <App />
+    </HashRouter>
+  </StrictMode>
 )
