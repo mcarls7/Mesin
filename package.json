@@ -2,7 +2,7 @@
   "name": "seal-online-eternal-garudapay",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://mcarls7.github.io/Mesin",
+  "homepage": "https://sealonline.co.id",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

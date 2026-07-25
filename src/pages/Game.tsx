@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import BreadcrumbJsonLd from '../components/BreadcrumbJsonLd'
-import { Sword, Shield, Users, Trophy, Sparkles, ChevronRight, Download, UserPlus, Gem, Zap } from 'lucide-react'
+import { Sword, Shield, Sparkles, Download, UserPlus, Zap } from 'lucide-react'
 
 const FadeIn = ({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) => {
   const ref = useState(() => null)

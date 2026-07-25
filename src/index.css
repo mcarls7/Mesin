@@ -52,7 +52,6 @@
 
 @utility font-display {
   font-family: 'Cinzel', 'Times New Roman', serif;
-  font-display: swap;
 }
 
 *:focus-visible {

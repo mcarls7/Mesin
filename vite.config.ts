@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 import { VitePWA } from 'vite-plugin-pwa'
 
 export default defineConfig({
-  base: '/Mesin/',
+  base: '/',
   plugins: [
     react(),
     tailwindcss(),
@@ -18,10 +18,10 @@ export default defineConfig({
         theme_color: '#f5c842',
         background_color: '#02040a',
         display: 'standalone',
-        start_url: '/Mesin/',
+        start_url: '/',
         icons: [
           {
-            src: '/Mesin/favicon.svg',
+            src: '/favicon.svg',
             sizes: 'any',
             type: 'image/svg+xml',
             purpose: 'any maskable',

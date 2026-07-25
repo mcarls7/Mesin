@@ -53,10 +53,10 @@ export const FEATURES = [
 ]
 
 export const WORLDS = [
-  { id: 'town', name: 'Town', description: 'Pusat perdagangan dan pertemuan antar pemain. Berbagai NPC dan quest tersedia di sini.', image: '/world/town.jpg' },
-  { id: 'dungeon', name: 'Dungeon', description: 'Area gelap yang dipenuhi monster berbahaya. Bersiaplah untuk pertarungan liar.', image: '/world/dungeon.jpg' },
-  { id: 'wilderness', name: 'Wilderness', description: 'Hutan luas dan medan alam yang menantang. Banyak hewan dan monster liar berkeliaran.', image: '/world/wilderness.jpg' },
-  { id: 'boss', name: 'Boss Area', description: 'Rahasia terlarang tempat boss raksasa bersembunyi. Hanya pemain terkuat yang bisa mengalahkannya.', image: '/world/boss.jpg' },
+  { id: 'town', name: 'Town', description: 'Pusat perdagangan dan pertemuan antar pemain. Berbagai NPC dan quest tersedia di sini.' },
+  { id: 'dungeon', name: 'Dungeon', description: 'Area gelap yang dipenuhi monster berbahaya. Bersiaplah untuk pertarungan liar.' },
+  { id: 'wilderness', name: 'Wilderness', description: 'Hutan luas dan medan alam yang menantang. Banyak hewan dan monster liar berkeliaran.' },
+  { id: 'boss', name: 'Boss Area', description: 'Rahasia terlarang tempat boss raksasa bersembunyi. Hanya pemain terkuat yang bisa mengalahkannya.' },
 ]
 
 export const NEWS = [
@@ -66,7 +66,6 @@ export const NEWS = [
     date: '2025-01-15',
     category: 'News',
     description: 'Kami dengan bangga mengumumkan peluncuran resmi SEAL Online Eternal GarudaPay. Era baru ini membawa pengalaman gaming yang lebih epic.',
-    image: '/news/news1.jpg',
   },
   {
     id: 2,
@@ -74,7 +73,6 @@ export const NEWS = [
     date: '2025-02-10',
     category: 'Update',
     description: 'Musim semi hadir dengan quest baru, equipment eksklusif, dan event spesial yang menanti petualang.',
-    image: '/news/news2.jpg',
   },
   {
     id: 3,
@@ -82,7 +80,6 @@ export const NEWS = [
     date: '2025-03-05',
     category: 'Event',
     description: 'Turnamen guild terbesar se-Indonesia dengan total hadiah mencapai puluhan juta rupiah.',
-    image: '/news/news3.jpg',
   },
   {
     id: 4,
@@ -90,7 +87,6 @@ export const NEWS = [
     date: '2025-03-02',
     category: 'Maintenance',
     description: 'Server akan undergoing maintenance pada 4 Maret 2025 pukul 02.00-06.00 WIB untuk peningkatan performa.',
-    image: '/news/news4.jpg',
   },
 ]
 
