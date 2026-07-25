@@ -1,2 +1,0 @@
-import{d as e}from"./index-BR_T9INd.js";var t=e(`MessageCircle`,[[`path`,{d:`M7.9 20A9 9 0 1 0 4 16.1L2 22Z`,key:`vv11sd`}]]),n=e(`Music`,[[`path`,{d:`M9 18V5l12-2v13`,key:`1jmyc2`}],[`circle`,{cx:`6`,cy:`18`,r:`3`,key:`fqmcym`}],[`circle`,{cx:`18`,cy:`16`,r:`3`,key:`1hluhg`}]]);export{t as n,n as t};
-//# sourceMappingURL=music-CuTvVN9n.js.map
