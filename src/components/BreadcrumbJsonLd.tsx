@@ -72,4 +72,3 @@ const BreadcrumbJsonLd = () => {
 }
 
 export default BreadcrumbJsonLd
-export { buildBreadcrumbs }
