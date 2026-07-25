@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { Users, Compass, Lightbulb, Shield } from 'lucide-react'
 import FadeIn from '../components/FadeIn'
-import { useRef, useEffect } from 'react'
+import { useEffect } from 'react'
 import BreadcrumbJsonLd from '../components/BreadcrumbJsonLd'
 
 const values = [

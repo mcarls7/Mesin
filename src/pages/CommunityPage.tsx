@@ -1,7 +1,8 @@
-import { useState, useEffect } from 'react'
+import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { MessageCircle, Users, Camera, Music, Play } from 'lucide-react'
 import BreadcrumbJsonLd from '../components/BreadcrumbJsonLd'
+import FadeIn from '../components/FadeIn'
 import { SOCIAL_LINKS } from '../data/mockData'
 
 const iconMap: Record<string, React.ReactNode> = {

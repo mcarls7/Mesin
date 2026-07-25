@@ -1,8 +1,8 @@
-import { useRef, useEffect } from 'react'
+import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import FadeIn from '../components/FadeIn'
 import BreadcrumbJsonLd from '../components/BreadcrumbJsonLd'
-import { Sparkles, Swords, Users } from 'lucide-react'
+import { Sparkles, Swords, Users, Globe } from 'lucide-react'
 
 const GarudaPayRebornPage = () => {
   useEffect(() => {
