@@ -1,24 +1,9 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { motion, useInView } from 'framer-motion'
+import FadeIn from '../components/FadeIn'
 import BreadcrumbJsonLd from '../components/BreadcrumbJsonLd'
 import { Sparkles, Swords, Users } from 'lucide-react'
 import { CLASSES } from '../data/mockData'
-
-const FadeIn = ({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) => {
-  const ref = useInView.ref ? useInView.ref() : null
-  const isInView = useInView.ref ? true : false
-  return (
-    <motion.div
-      ref={ref as any}
-      initial={{ opacity: 0, y: 30 }}
-      animate={isInView ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 0.7, delay }}
-    >
-      {children}
-    </motion.div>
-  )
-}
 
 const colorMap: Record<string, string> = {
   'from-red-500 to-orange-500': 'text-ember',

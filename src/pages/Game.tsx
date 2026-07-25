@@ -1,23 +1,8 @@
 import { useState, useEffect } from 'react'
-import { motion, useInView } from 'framer-motion'
 import { Link } from 'react-router-dom'
+import FadeIn from '../components/FadeIn'
 import BreadcrumbJsonLd from '../components/BreadcrumbJsonLd'
 import { Sword, Shield, Sparkles, Download, UserPlus, Zap } from 'lucide-react'
-
-const FadeIn = ({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) => {
-  const ref = useState(() => null)
-  const isInView = useInView(ref[0], { once: true, margin: '-100px' })
-  return (
-    <motion.div
-      ref={ref[0]}
-      initial={{ opacity: 0, y: 30 }}
-      animate={isInView ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 0.7, delay }}
-    >
-      {children}
-    </motion.div>
-  )
-}
 
 const Game = () => {
   useEffect(() => {

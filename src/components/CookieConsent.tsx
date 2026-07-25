@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import { X } from 'lucide-react'
 
 const CookieConsent = () => {
   const [visible, setVisible] = useState(false)

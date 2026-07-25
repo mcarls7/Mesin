@@ -1,18 +1,8 @@
-import { useRef, useEffect } from 'react'
-import { motion, useInView } from 'framer-motion'
+import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import FadeIn from '../components/FadeIn'
 import BreadcrumbJsonLd from '../components/BreadcrumbJsonLd'
 import { BookOpen } from 'lucide-react'
-
-const FadeIn = ({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) => {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: '-100px' })
-  return (
-    <motion.div ref={ref} initial={{ opacity: 0, y: 30 }} animate={isInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7, delay }}>
-      {children}
-    </motion.div>
-  )
-}
 
 const guides = [
   { id: 'leveling', title: 'Leveling Guide', description: 'Master efficient routes and strategies to level up quickly. Discover optimal hunting grounds and quest chains that will get you to max level in record time.' },
